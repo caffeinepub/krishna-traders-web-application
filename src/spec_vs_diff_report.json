@@ -1,0 +1,25 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T03:21:52.554Z",
+  "summary": "Diff adds a go-live verification checklist and updates frontend contact-link generation (phone/email/WhatsApp) to improve CTA link reliability. However, there is no evidence in the diff of an actual production Internet Computer deployment being performed/configured, nor evidence that production routes/SEO files were verified in a deployed environment.",
+  "missing_requirements": [
+    {
+      "id": "REQ-16",
+      "requirement": "Deploy the currently approved “Draft Version 4” of the Krishna Traders website to the production Internet Computer canister(s) and perform a go-live verification pass to confirm the public site is accessible and key pages load correctly.",
+      "reason": "The diff only adds a manual verification checklist document and a frontend contact-link tweak; it does not include any deployment configuration/commands, canister configuration changes, CI/deploy scripts, or any recorded deployment/verification results for production accessibility, routes, or /robots.txt and /sitemap.xml availability.",
+      "evidence": [
+        "frontend/GO_LIVE_VERIFICATION.md",
+        "frontend/src/config/businessContact.ts"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.68,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/GO_LIVE_VERIFICATION.md",
+    "frontend/src/config/businessContact.ts",
+    "project_state.json"
+  ]
+}

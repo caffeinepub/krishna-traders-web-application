@@ -1,0 +1,23 @@
+{
+  "frontend/src/App.tsx": "Main application component with hash-based routing including the new NotFoundPage wired as the notFoundComponent for the root route, maintaining SiteLayout wrapper.",
+  "frontend/src/config/businessContact.ts": "Centralized business contact configuration with normalized phone number helper functions that strip spaces and dashes from tel: links while preserving the '+' prefix for improved cross-device compatibility.",
+  "frontend/src/components/layout/SiteLayout.tsx": "Root layout wrapper component that provides consistent header and footer structure across all pages.",
+  "frontend/src/components/layout/Header.tsx": "Responsive navigation header with logo, prominently displayed \"Krishna Traders\" brand name (visible on all screen sizes with larger responsive typography), menu links, and contact CTAs (Call/Email/WhatsApp) for both desktop and mobile views.",
+  "frontend/src/components/layout/Footer.tsx": "Site footer displaying both phone numbers with clickable tel: links, updated email link, WhatsApp link, quick navigation links, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/pages/HomePage.tsx": "Landing page with increased typography sizes for hero heading (text-5xl to text-7xl), hero description (text-xl to text-2xl), section headings (text-3xl/4xl to text-4xl/5xl), and feature/category descriptions for improved readability and visual impact.",
+  "frontend/src/pages/ProductsCategoriesPage.tsx": "Product catalog page displaying four main categories (GI Plumbing, GI Clamps, GI Brackets, Hardware) with images, descriptions, and product lists.",
+  "frontend/src/pages/AboutPage.tsx": "About page describing Krishna Traders' business, values, offerings, and commitment to wholesale customers.",
+  "frontend/src/pages/ContactInquiryPage.tsx": "Contact page showing both phone numbers in separate contact cards with tel: links, updated email with mailto: link, WhatsApp link, business hours, and embedded inquiry form.",
+  "frontend/src/components/inquiry/InquiryForm.tsx": "Form component with validation for submitting customer inquiries including name, phone, email, category, and message fields.",
+  "frontend/src/hooks/useSubmitInquiry.ts": "React Query mutation hook for submitting inquiry data to the backend actor.",
+  "frontend/src/pages/AdminInquiriesPage.tsx": "Admin dashboard page displaying all submitted inquiries in a table format with authentication gate.",
+  "frontend/src/hooks/useAdminInquiries.ts": "React Query hooks for fetching all inquiries and checking admin status from the backend.",
+  "frontend/src/components/auth/AdminGate.tsx": "Authentication wrapper component that requires Internet Identity login before showing admin content.",
+  "frontend/src/index.css": "Global styles with industrial-themed OKLCH color system using warm amber/orange primary colors for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom color tokens, Inter font family, and extended theme for the industrial aesthetic.",
+  "frontend/index.html": "HTML entry point with updated title \"Krishna Traders\" and meta description for SEO describing the wholesale supplier business.",
+  "frontend/public/robots.txt": "Standard robots.txt file allowing all crawlers and referencing the sitemap location.",
+  "frontend/public/sitemap.xml": "XML sitemap listing the main public routes (Home, Products, About, Contact) with hash-based URLs for crawler discovery.",
+  "frontend/src/pages/NotFoundPage.tsx": "User-friendly 404 error page with clear messaging, an alert icon, and a button to navigate back to the home page.",
+  "frontend/GO_LIVE_VERIFICATION.md": "Comprehensive go-live verification checklist covering build success, site accessibility, header branding, route reachability, SEO files, contact CTAs, inquiry form, authentication, responsive design, performance, and browser compatibility testing."
+}

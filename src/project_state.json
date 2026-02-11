@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 11,
+  "summary": "Build a web application for Krishna Traders (wholesale supplier of hardware and GI materials—primarily GI plumbing material, GI clamps, and GI brackets) targeting construction and industrial customers.",
+  "architectural_notes": [
+    "Store business contact details (phone numbers, email) in a single frontend config source so header/footer CTAs and Contact page reuse the same values."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-marketing-website-for-krishna-traders-that-clearly-communicates-the-business-as-a-wholesale-supplier-of-hardware-materials-and-gi-materials-for-construction-and-industrial-customers-with-primary-focus-on-gi-plumbing-material-gi-clamps-and-gi-brackets",
+      "title": "Create a responsive marketing website for “Krishna Traders” that clearly communicates the business as a wholesale supplier of hardware materials and GI materials for construction and industrial customers, with primary focus on GI plumbing material, GI clamps, and GI brackets.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-key-website-sections-pages-1-home-overview-featured-categories-2-products-categories-gi-plumbing-material-gi-clamps-gi-brackets-and-a-general-hardware-materials-category-3-about-krishna-traders-and-4-contact-inquiry",
+      "title": "Add key website sections/pages: (1) Home (overview + featured categories), (2) Products/Categories (GI Plumbing Material, GI Clamps, GI Brackets, and a general Hardware Materials category), (3) About Krishna Traders, and (4) Contact/Inquiry.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-inquiry-form-contact-inquiry-page-that-collects-customer-name-company-name-optional-phone-number-email-optional-location-optional-category-of-interest-gi-plumbing-gi-clamps-gi-brackets-hardware-materials-and-message-requirements",
+      "title": "Implement an Inquiry form (Contact/Inquiry page) that collects: customer name, company name (optional), phone number, email (optional), location (optional), category of interest (GI Plumbing / GI Clamps / GI Brackets / Hardware Materials), and message/requirements.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-wire-the-inquiry-form-submission-to-the-backend-using-the-app-s-existing-actor-react-query-patterns-including-loading-and-error-states",
+      "title": "Wire the Inquiry form submission to the backend using the app’s existing actor/React Query patterns, including loading and error states.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-simple-internal-admin-view-page-to-display-submitted-inquiries-read-only-list-with-timestamps-and-field-values",
+      "title": "Add a simple internal admin view/page to display submitted inquiries (read-only list with timestamps and field values).",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-define-and-apply-a-coherent-visual-theme-across-the-site-colors-typography-spacing-and-component-styling-suitable-for-a-construction-industrial-wholesale-supplier-avoid-blue-purple-as-primary-colors",
+      "title": "Define and apply a coherent visual theme across the site (colors, typography, spacing, and component styling) suitable for a construction/industrial wholesale supplier. Avoid blue/purple as primary colors.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-static-business-contact-call-to-actions-in-the-header-footer-call-email-and-whatsapp-actions-using-placeholder-contact-details-stored-in-a-single-configurable-place-in-the-frontend-easy-to-change-later",
+      "title": "Add static business contact call-to-actions in the header/footer: “Call”, “Email”, and “WhatsApp” actions using placeholder contact details stored in a single configurable place in the frontend (easy to change later).",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-render-the-generated-static-images-logo-hero-banner-category-illustrations-from-frontend-static-assets-and-incorporate-them-into-the-home-and-products-categories-pages",
+      "title": "Render the generated static images (logo, hero banner, category illustrations) from frontend static assets and incorporate them into the Home and Products/Categories pages.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-typography-font-sizes-on-the-krishna-traders-home-page-to-improve-readability-and-visual-appearance-focusing-on-the-hero-headline-hero-description-text-and-key-section-headings-subtext-on-the-main-home-page",
+      "title": "Increase the typography (font sizes) on the Krishna Traders Home page to improve readability and visual appearance, focusing on the hero headline, hero description text, and key section headings/subtext on the main (Home) page.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-wide-business-contact-details-to-use-phone-numbers-9970279004-and-9921624211-and-email-traderskrishna682-gmail-com-and-ensure-both-phone-numbers-are-displayed-wherever-the-site-shows-phone-contact-info-header-footer-contact-page-while-contact-buttons-links-remain-functional",
+      "title": "Update the site-wide business contact details to use phone numbers 9970279004 and 9921624211 and email traderskrishna682@gmail.com, and ensure both phone numbers are displayed wherever the site shows phone contact info (header/footer/contact page), while contact buttons/links remain functional.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-header-branding-so-the-text-krishna-traders-is-prominently-displayed-at-the-top-on-all-pages-using-a-larger-font-for-better-appearance-including-on-small-mobile-screens",
+      "title": "Update the site header branding so the text “Krishna Traders” is prominently displayed at the top on all pages, using a larger font for better appearance (including on small/mobile screens).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-public-site-metadata-for-go-live-by-setting-the-html-document-title-to-krishna-traders-and-adding-a-meta-description-suitable-for-a-wholesale-supplier-of-gi-plumbing-materials-gi-clamps-gi-brackets-and-hardware-materials",
+      "title": "Update the public site metadata for go-live by setting the HTML document title to \"Krishna Traders\" and adding a meta description suitable for a wholesale supplier of GI plumbing materials, GI clamps, GI brackets, and hardware materials.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-basic-public-seo-static-files-for-go-live-create-a-robots-txt-and-a-sitemap-xml-in-the-frontend-public-assets-so-they-are-served-at-robots-txt-and-sitemap-xml",
+      "title": "Add basic public SEO/static files for go-live: create a `robots.txt` and a `sitemap.xml` in the frontend public assets so they are served at `/robots.txt` and `/sitemap.xml`.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-user-friendly-not-found-page-route-so-that-unknown-routes-show-a-clear-404-message-and-a-link-back-to-home",
+      "title": "Implement a user-friendly \"Not Found\" page/route so that unknown routes show a clear 404 message and a link back to Home.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-deploy-the-currently-approved-draft-version-4-of-the-krishna-traders-website-to-the-production-internet-computer-canister-s-and-perform-a-go-live-verification-pass-to-confirm-the-public-site-is-accessible-and-key-pages-load-correctly",
+      "title": "Deploy the currently approved “Draft Version 4” of the Krishna Traders website to the production Internet Computer canister(s) and perform a go-live verification pass to confirm the public site is accessible and key pages load correctly.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a web application/website for Krishna Traders to showcase wholesale hardware and GI materials (GI plumbing material, GI clamps, GI brackets) for construction/industrial customers.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Create backend canister functionality to store inquiry submissions and allow retrieval of inquiries for internal review.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Increase the main (Home) page font size/typography for improved readability and appearance.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Update site contact details to use the provided phone numbers (9970279004, 9921624211) and email (traderskrishna682@gmail.com) in header/footer contact CTAs (replacing placeholders).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Go live / deploy the approved Draft Version 4 of the Krishna Traders website to production.",
+      "reqIds": [],
+      "status": "in_progress"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Krishna Traders Web Application",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

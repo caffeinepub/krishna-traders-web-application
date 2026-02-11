@@ -1,0 +1,39 @@
+{
+  "kind": "build_request",
+  "title": "Go-live deployment of approved Draft Version 4",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "text": "Deploy the currently approved “Draft Version 4” of the Krishna Traders website to the production Internet Computer canister(s) and perform a go-live verification pass to confirm the public site is accessible and key pages load correctly.",
+      "target": "unknown",
+      "source": {
+        "messageIds": [
+          "recent-messages-4"
+        ],
+        "quotes": [
+          "Yes header is good you can go live with this"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Production deployment completes successfully without build errors.",
+        "Public site loads successfully and the header displays the brand text “Krishna Traders” on all main pages.",
+        "Routes for Home (/), Products (/products), About (/about), Contact (/contact), and Admin (/admin) are reachable in the deployed build.",
+        "/robots.txt and /sitemap.xml are served and accessible in production.",
+        "Contact CTAs (Call, Email, WhatsApp) remain functional after deployment."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under frontend/src/components/ui or other frontend immutablePaths.",
+    "Keep backend as a single Motoko actor in backend/main.mo; add migration.mo only if an upgrade requires state migration."
+  ],
+  "nonGoals": [
+    "No further UI/UX or content changes beyond go-live deployment and verification.",
+    "No new pages, features, or backend schema changes unless required to unblock deployment."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

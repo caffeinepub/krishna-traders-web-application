@@ -1,0 +1,45 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Krishna Traders Draft Version 4 go-live frontend readiness and verification",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "summary": "Prepare the frontend build for production go-live and add a lightweight verification checklist ensuring required routes, SEO files, header branding, and contact CTAs work in the deployed build.",
+      "acceptanceCriteria": [
+        "Production deployment completes successfully without build errors.",
+        "Public site loads successfully and the header displays the brand text “Krishna Traders” on all main pages.",
+        "Routes for Home (/), Products (/products), About (/about), Contact (/contact), and Admin (/admin) are reachable in the deployed build.",
+        "/robots.txt and /sitemap.xml are served and accessible in production.",
+        "Contact CTAs (Call, Email, WhatsApp) remain functional after deployment."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/main.tsx",
+          "operation": "modify",
+          "description": "Add a small go-live routing normalization so direct navigation to /, /products, /about, /contact, and /admin still loads correctly even with the existing hash-based router (e.g., map non-root window.location.pathname into the appropriate hash route before rendering)."
+        },
+        {
+          "path": "frontend/src/config/businessContact.ts",
+          "operation": "modify",
+          "description": "Harden CTA link generation for production by normalizing the phone numbers used in tel: links (strip spaces/dashes while preserving leading '+') to reduce device/browser incompatibilities and ensure Call/Email/WhatsApp CTAs remain functional after deployment."
+        },
+        {
+          "path": "frontend/public/robots.txt",
+          "operation": "modify",
+          "description": "Verify production correctness of robots.txt contents (allow rules and sitemap reference) and adjust only if required to ensure it is served as expected in the deployed build."
+        },
+        {
+          "path": "frontend/public/sitemap.xml",
+          "operation": "modify",
+          "description": "Verify sitemap entries align with the deployed public routes (Home, Products, About, Contact) and update only if needed for production consistency while keeping it accessible at /sitemap.xml."
+        },
+        {
+          "path": "frontend/GO_LIVE_VERIFICATION.md",
+          "operation": "create",
+          "description": "Create a concise go-live verification checklist covering: successful build, public accessibility, header brand text presence, reachability of /, /products, /about, /contact, /admin, accessibility of /robots.txt and /sitemap.xml, and functional Call/Email/WhatsApp CTAs in production."
+        }
+      ]
+    }
+  ]
+}

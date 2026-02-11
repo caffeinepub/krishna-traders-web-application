@@ -1,0 +1,43 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T03:21:52.557Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-16",
+        "summary": "Deploy the currently approved “Draft Version 4” of the Krishna Traders website to the production Internet Computer canister(s) and perform a go-live verification pass to confirm the public site is accessible and key pages load correctly.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/main.tsx",
+          "frontend/src/config/businessContact.ts",
+          "frontend/public/robots.txt",
+          "frontend/public/sitemap.xml",
+          "frontend/GO_LIVE_VERIFICATION.md"
+        ],
+        "matchedFiles": [
+          "frontend/src/config/businessContact.ts",
+          "frontend/GO_LIVE_VERIFICATION.md"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/GO_LIVE_VERIFICATION.md",
+    "frontend/src/config/businessContact.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

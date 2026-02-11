@@ -1,2 +1,3 @@
-# krishna-traders-web-application
-Exported from Caffeine project: Krishna Traders Web Application
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`
